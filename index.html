@@ -7,16 +7,8 @@
     <title>권예진의 홈페이지</title>
     <link rel="stylesheet" href="./practice.css" type="text/css">
 
-    <script type="text/javascript">
-        function doSomething(){
-            let a = document.getElementById('inputA').value;
-            let b = document.getElementById('inputB').value;
-            document.getElementById("valueA").innerHTML = a;
-            document.getElementById("valueB").innerHTML = b;
-            document.getElementById("valueC").innerHTML = Number(a) + Number(b);
-        }
-
-    </script>
+    <script type="text/javascript" src="add_two_numbers.js"></script>
+    <script type="text/javascript" src="what_time_is_it.js"></script>
 </head>
 <body>
     <nav>
@@ -30,6 +22,10 @@
     <h3>-채용 관련 업무 경험</h3>
     <h3>-Data 시각화 & 분석 과정 수강 중</h3>
     <h5>-HRM전문가 자격시험 준비 중</h5>
+    <hr />
+
+    <button onclick="whatTimeIsIt()">현재시간</button>
+    <hr />
 
     <label for="inputA">a</label>
     <input id="inputA" value=1 onkeyup="doSomething()">
