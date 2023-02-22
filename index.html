@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>권예진의 홈페이지</title>
     <link rel="stylesheet" href="./practice.css" type="text/css">
+
+    <script type="text/javascript">
+        function doSomething(){
+            let a = document.getElementById('inputA').value;
+            let b = document.getElementById('inputB').value;
+            document.getElementById("valueA").innerHTML = a;
+            document.getElementById("valueB").innerHTML = b;
+            document.getElementById("valueC").innerHTML = Number(a) + Number(b);
+        }
+
+    </script>
 </head>
 <body>
     <nav>
@@ -19,6 +30,14 @@
     <h3>-채용 관련 업무 경험</h3>
     <h3>-Data 시각화 & 분석 과정 수강 중</h3>
     <h5>-HRM전문가 자격시험 준비 중</h5>
+
+    <label for="inputA">a</label>
+    <input id="inputA" value=1 onkeyup="doSomething()">
+    <label for="inputB">b</label>
+    <input id="inputB" value=2 onkeyup="doSomething()">
+
+    <p><span id="valueA">1</span>+<span id="valueB">2</span> = <span id="valueC">3</span>입니다. </p>
+
     <p>문단은 p로 쓰세요. p는 아마도 Paragraph의 앞글자를 따온 것이겠죠?</p>
     <a href="https://github.com/Yerial1125?tab=repositories">깃허브 방문하기</a>
     <hr/>
